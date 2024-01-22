@@ -44,10 +44,6 @@ a {
   color: var(--primary-color);
 }
 
-a:hover {
-  color: var(--secondary-color);
-}
-
 body {
   font-family: var(--font-family);
 }
@@ -60,27 +56,29 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color:rgba(5, 28, 114, 0.881);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
   }
   nav h1 {
-    color: var(--primary-color);
+    color:#fcfcfc;
     font-size: 30px;
   }
   nav h1:hover{
-    color: var(--secondary-color);
     font: weight 300px;
+    color: #fa6639;
+    
   }
   
   nav a {
-    color: var(--primary-color);
-    transition: var(--transition);
+    color:white;
+    
     font-size: 20px;
   }
   nav a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    font-size: 30px;
+
+    border-bottom: 2px solid white;
+    
   }
   
   nav ul {
@@ -104,37 +102,43 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 2.7rem;
-    padding-left:6;
+    padding-left: 10%;
     max-width: 90.75rem;
-  
-  }
+ }
   hero img {
-    height: 37.5rem;
-    width: 37.5rem;
-  
+    height:500px;
+    width:500px;
+    padding-left: 10px;
+    margin-top: 10%;
   }
- 
   .bio {
     width: 40rem;
     height: 300px;
-    padding: 0.625rem;
+    padding: 0.700rem;
     margin-top: 10%;
     padding-left: 6%;
+    margin-left: 15%;
    border-radius: 6px;
     /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
   }
-  .bio:hover{
-     border-radius: 8px;
-     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  .bio:hover
+  {
+    color: #ff7235;
   }
-  
-  .bio h1 {
+  .bio h1{
 
     margin-bottom: var(--bottom-margin);
     margin-top: 15%;
-    
+    transition-duration: 1s;
   }
   
+  .bio-title{
+    font-size: 70px;
+  }
+ 
+ .bio-text h2{
+  font-size:40px;
+ }
   .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
@@ -144,41 +148,60 @@ nav {
 
   .myimg
 {
-   margin-left:75%;
+   margin: left 70%;
    border-color:white;
-   margin-top:60px;
+   margin-top:0px;
    border-radius: 250px;
    border: 5px solid black;
+   margin-left: 5%;
+   
 }
 .myimg:hover
 {
   transform: scale(1.2);
   transition-duration: 2s;
   box-shadow: 0px 0px 30px grey;
+  padding: auto;
 }
-  /* .more-about {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
-  }
+  .more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+  display: flex;
+   margin-top: 10%;
+   
+ }
   
   .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
+    font-size:30px;
+  }
+  .more-about h2:hover{
+    color:#ff7235;
   }
   
   .more-about p {
     line-height: var(--line-height);
-    padding: 0.4rem;
-  } */
+    padding: 1rem;
+  padding: left 0%;;
+  font-size: 20px;
+  margin-top: 30px;
+  }
   .skills {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 4.8rem;
+    background-color: #8b8eaf;
   }
   
   .skill-header {
     margin-bottom: 1rem;
+    font-size: 30px;
+    margin-left: 40%;
+  }
+  .skill-header:hover{
+    color:#ff7235;
   }
   
   .skills-wrapper img {
@@ -202,17 +225,16 @@ nav {
     border-radius: 30px 30px;
     flex-direction: row-reverse;
     flood-color: var(--primary-shadow);
-  
-  }
+}
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
 }
-
 .project-pic {
-  width: 65%;
-  height: 60%;
+  height: 250px;
+  width: 250px;
+ 
 }
 
 .projects-container {
@@ -223,25 +245,26 @@ nav {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 30px;
 }
-
+.projects-title:hover{
+  color:#ff7235;
+}
 .project-container {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
+  
 }
 .project-container p {
   padding: 0.4rem;
 }
-
-.project-title {
+.projects-title {
   margin-bottom: var(--bottom-margin);
 }
-
 .project-details {
   margin-bottom: var(--bottom-margin);
 }
-
 .project-card {
   background-color: #fff;
   border-radius: 11px;
@@ -249,13 +272,30 @@ nav {
   padding: 20px;
   margin: 10px;
 }
-.contact {
-  margin-top: 2rem;
+.project-title{
+  font-size: 20px;
+
+}
+.project-title:hover{
+ color: #fa6639;
+}
+#card{
+  background-color: #e3e4f5;
 }
 
+
+
+.contact {
+  margin-top: 2rem;
+  
+}
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  font-size: 30px;
+}
+.contact h2:hover{
+  color:#ff7235;
 }
 label 
 {
@@ -271,46 +311,45 @@ label:hover{
   padding: 0.938rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
+  background-color: black;
 }
 .contact-form-container label {
   line-height: 2.7em;
-  font-weight: var(--bold-font);
-  color: var(--primary-color);
+  /* font-weight: var(--bold-font); */
+  /* color: var(--primary-color); */
 }
-
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
 }
-
 .contact-form-container .input-field {
   width: 100%;
   padding-top: 10px;
   padding-bottom:10px;
   border-radius: 5px;
   border: none;
-  border: 2px outset var(--primary-color);
+  border: 2px outset black;
   font-size: 0.875rem;
   outline: none;
 }
 .input-field::placeholder {
   padding: 0.5rem;
-  color: var(--primary-color);
+  color: black;
 }
 .submit-btn {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   background-color: #fff;
-  border: 2px solid var(--primary-color);
+  border: 2px solid black;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: var(--bold-font);
-  transition: var(--transition);
+  transition: black;
 }
 .submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background-color: #ff7235;
+  border: 2px solid black;
   cursor: pointer;
 }
 .socials {
@@ -320,13 +359,11 @@ label:hover{
   right: 1%;
   bottom: 50%;
 }
-
 .socicon {
   width: 2rem;
   height: 2rem;
 }
- 
-.footer {
+ .footer {
   position: relative;
   width: 100vw;
   background: #3586ff;
@@ -338,7 +375,6 @@ label:hover{
   flex-direction: column;
   margin-top: 10%;
 }
-
 .social-icon,
 .menu {
   position: relative;
@@ -348,12 +384,10 @@ label:hover{
   margin: 10px 0;
   flex-wrap: wrap;
 }
-
 .social-icon__item,
 .menu__item {
   list-style: none;
 }
-
 .social-icon__link {
   font-size: 2rem;
   color: #fff;
@@ -364,7 +398,6 @@ label:hover{
 .social-icon__link:hover {
   transform: translateY(-10px);
 }
-
 .menu__link {
   font-size: 1.2rem;
   color: #fff;
@@ -375,11 +408,9 @@ label:hover{
   opacity: 0.75;
   font-weight: 300;
 }
-
 .menu__link:hover {
   opacity: 1;
 }
-
 .footer p{
   color: #fff;
   margin: 15px 0 10px 0;
@@ -396,35 +427,30 @@ label:hover{
   background: url("https://i.ibb.co/wQZVxxk/wave.png");
   background-size: 1000px 100px;
 }
-
 .wave#wave1 {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
   animation: animateWaves 4s linear infinite;
 }
-
 .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
   animation: animate 4s linear infinite !important;
 }
-
 .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWaves 3s linear infinite;
 }
-
 .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;
 }
-
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;
@@ -433,7 +459,6 @@ label:hover{
     background-positon-x: 0px;
   }
 }
-
 @keyframes animate {
   0% {
     background-position-x: -1000px;
